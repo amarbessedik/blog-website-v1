@@ -7,7 +7,7 @@ const Sidebar = (props) => {
   return (
     <div className="sidebar">
       {data.map((post) => (
-        <Card>
+        <Card key={post.id}>
           <div className="thumbnail_link">
             <div className="thumbnail">
                 <img src={post.image} alt="thumbnail"/>

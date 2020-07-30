@@ -7,6 +7,8 @@ import NoMatch from './pages/NoMatch/NoMatch';
 import { Route, Switch} from 'react-router-dom';
 import Navbar from './components/Navigation/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
+import Footer from './components/Footer/Footer';
+import Hero from './components/Hero/Hero';
 
 function App() {
   return (
@@ -14,17 +16,19 @@ function App() {
       <Navbar />
       <div className="inner-container">
         <div className="main-content">
+          <Hero />
           <Switch>
-              <Route path="/" component={Home} exact />
-              <Route path="/about" component={About} />
-              <Route path="/contact" component={Contact} />
-              <Route component={NoMatch} />
+            <Route path="/" component={Home} exact />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Route component={NoMatch} />
           </Switch>
         </div>
         <div className="sidebar-content">
           <Sidebar />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,38 @@
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links ul{
+    margin: 0;
+    padding: 0;
+}
+.nav-links ul li{
+    display: inline-block;
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+    margin-right: 15px;
+}
+.link:hover{
+    color: rgb(219, 28, 92);
+}
+.input{
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    margin-left: 5px;
+    background: rgba(253, 195, 231, 0.315);
+    outline: none;
+}
+.fa-search{
+    border: 1px solid rgb(189, 184, 187);
+    padding: 3px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+.fa-search:hover{
+    color: white;
+    background: lightcoral;
+}
