@@ -1,10 +1,7 @@
-.hamburger-menu{
-    display: none;
-}
 .side-menu{
+    display: none;
     background: #aaa;
-    /* transform: translateX(-110%); */
-    width: 50%;
+    width: 100%;
     z-index: 20;
     height: calc(100vh - 100px);
 }

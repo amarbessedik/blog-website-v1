@@ -6,7 +6,7 @@ import BurgerBar from "../BurgerBar/BurgerBar";
 const Navbar = () => {
   return (
     <div className="navbar">
-        <BurgerBar />
+      <BurgerBar />
       <ul>
         {social_icons.map((social_icon) => {
           return (

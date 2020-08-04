@@ -6,10 +6,11 @@ const BurgerBar = () => {
   const [hidden, setHidden] = useState(true);
 
   const handleClick = () => {
+
     const sideMenuClass = document.querySelector(".side-menu");
     hidden
-      ? (sideMenuClass.style.display = "none")
-      : (sideMenuClass.style.display = "block");
+      ? (sideMenuClass.style.display = "block")
+      : (sideMenuClass.style.display = "none");
     setHidden(!hidden);
   };
   return (
