@@ -8,9 +8,9 @@ const Navbar = () => {
     <div className="navbar">
       <BurgerBar />
       <ul>
-        {social_icons.map((social_icon) => {
+        {social_icons.map((social_icon, index) => {
           return (
-            <SocialIcon icon={social_icon.icon} title={social_icon.title} />
+            <SocialIcon key={index} icon={social_icon.icon} title={social_icon.title} />
           );
         })}
       </ul>
@@ -21,9 +21,9 @@ const Navbar = () => {
 const SocialIcon = ({ icon, title }) => {
   return (
     <li>
-      <Link>
+      <Link  to='/'>
         <i
-          class={icon}
+          className={icon}
           data-toggle="tooltip"
           data-placement="top"
           title={title}

@@ -1,67 +1,68 @@
-.hero-container{
-    display: flex;
-    justify-content: space-between;
+.hero-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.search-section{
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    max-width: 50%;
-    align-self: flex-end;
+.search-section {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  align-self: flex-end;
 }
-.nav-links ul{
-    margin: 0;
-    padding: 0;
+.nav-links ul {
+  margin: 0;
+  padding: 0;
 }
-.nav-links ul li{
-    display: inline-block;
-    list-style: none;
+.nav-links ul li {
+  display: inline-block;
+  list-style: none;
 }
-.link{
-    text-decoration: none;
-    margin: 0;
-    margin-right: 15px;
-    color: #555;
+.link {
+  text-decoration: none;
+  margin: 0;
+  margin-right: 15px;
+  color: rgb(7, 186, 192);
 }
-.link:hover{
-    color: rgb(219, 28, 92);
+.link:hover {
+  color: rgb(6, 96, 99);
+  text-decoration: none;
 }
-.input{
-    padding: 3px 10px;
-    border-radius: 5px;
-    border: 1px solid rgb(51, 207, 103);
-    width: 100%;
-    outline: none;
+.input {
+  padding: 3px 10px;
+  border-radius: 5px;
+  border: 0.08rem solid rgb(7, 186, 192);
+  width: 100%;
+  outline: none;
 }
-::placeholder{
-    color: rgb(63, 233, 120);
+::placeholder {
+  color: rgb(7, 186, 192);
 }
-.fa-search{
-    color: #777;
-    cursor: pointer;
-    font-size: 1.5rem;
-    margin-right: 5px;
+.fa-search {
+  color: #222;
+  cursor: pointer;
+  transform: scale(1.05);
+  margin-right: 5px;
 }
-.fa-search:hover{
-     color: #333;
+.fa-search:hover {
+  color: #333;
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 700px){
-    .hero-container{
-        flex-direction: column;
-    }
-    .nav-links{
-        align-self: center;
-        margin-bottom: 15px;
-    }
-    .search-section{
-        min-width: 100%;
-        align-self: flex-end;
-    }
-    .nav-links{
-     display: none;
-    }
+@media screen and (max-width: 700px) {
+  .hero-container {
+    flex-direction: column;
+  }
+  .nav-links {
+    align-self: center;
+    margin-bottom: 15px;
+  }
+  .search-section {
+    min-width: 100%;
+    align-self: flex-end;
+  }
+  .nav-links {
+    display: none;
+  }
 }

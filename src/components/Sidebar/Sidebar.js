@@ -10,11 +10,12 @@ const Sidebar = (props) => {
         <Card key={post.id}>
           <div className="thumbnail_link">
             <div className="thumbnail">
-                <img src={post.image} alt="thumbnail"/>
+              <img src={post.image} alt="thumbnail" />
             </div>
             <div className="link">
-              <h5 className='title'>{post.title}</h5>
-              <p>{post.content.substring(0, 25)} ...</p>
+              <p>
+                {post.title}
+              </p>
               <span className="date_published">
                 Published on {post.published}
               </span>

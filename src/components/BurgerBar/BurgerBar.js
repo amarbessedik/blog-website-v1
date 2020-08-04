@@ -6,7 +6,6 @@ const BurgerBar = () => {
   const [hidden, setHidden] = useState(true);
 
   const handleClick = () => {
-
     const sideMenuClass = document.querySelector(".side-menu");
     hidden
       ? (sideMenuClass.style.display = "block")
@@ -15,7 +14,7 @@ const BurgerBar = () => {
   };
   return (
     <div className="hamburger-menu">
-      <i onClick={handleClick} class="fas fa-bars"></i>
+      <i onClick={handleClick} className="fas fa-bars"></i>
       <div className="side-menu">
         <ul>
           <li>
