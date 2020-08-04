@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    title: 'Object Oriented Javascript',
+    title: 'OOP In JS',
     image: require('./images/img_1.jpg'),
     author: "@ amar bessedik",
     content: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ...",
@@ -10,7 +10,7 @@ export default [
   },
   {
     id: 2,
-    title: 'ReactJS Overview',
+    title: 'ReactJS Tour',
     image: require('./images/img_2.jpg'),
     author: "@ amar bessedik",
     content: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ...",
@@ -19,7 +19,7 @@ export default [
   },
   {
     id: 3,
-    title: 'ReactJS Router',
+    title: 'The Virtual DOM',
     image: require('./images/img_3.jpg'),
     author: "@ amar bessedik",
     content: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ...",
@@ -28,7 +28,7 @@ export default [
   },
   {
     id: 4,
-    title: 'The JS Arrow Functions (ES6)',
+    title: 'JS Arrow Functions',
     image: require('./images/img_4.jpg'),
     author: "@ amar bessedik",
     content: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ...",
@@ -37,7 +37,7 @@ export default [
   },
   {
     id: 5,
-    title: 'Array Function in Javascript',
+    title: 'Array Functions in JS',
     image: require('./images/img_5.jpg'),
     author: "@ amar bessedik",
     content: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ...",
@@ -46,7 +46,7 @@ export default [
   },
   {
     id: 6,
-    title: 'Javascript Powering the Web',
+    title: 'JS The web\'s Engine',
     image: require('./images/img_6.jpg'),
     author: "@ amar bessedik",
     content: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ...",

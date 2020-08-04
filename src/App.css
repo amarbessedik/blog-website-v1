@@ -21,13 +21,13 @@ body{
 }
 .main-content{
     padding: 0 10px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 70%;
     min-height: 100vh;
 }
 .sidebar-content{
     padding: 0 10px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 29%;
     min-height: 100vh;
 }
