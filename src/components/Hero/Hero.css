@@ -2,20 +2,14 @@
     display: flex;
     justify-content: space-between;
 }
-.hamburger-menu{
-    display: none;
-}
-.side-menu{
-    background: #aaa;
-    /* transform: translateX(-110%); */
-    width: 50%;
-    z-index: 20;
-    height: calc(100vh - 100px);
-}
+
 .search-section{
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
+    max-width: 50%;
+    align-self: flex-end;
 }
 .nav-links ul{
     margin: 0;
@@ -64,8 +58,8 @@
         margin-bottom: 15px;
     }
     .search-section{
-        width: 75%;
-        align-self: center;
+        min-width: 100%;
+        align-self: flex-end;
     }
     .nav-links{
      display: none;

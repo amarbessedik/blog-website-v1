@@ -17,13 +17,21 @@
   margin: 10px;
 }
 .fas,
+.fa,
 .fab {
   font-size: 1.5rem;
   color: #666;
   background: transparent;
 }
 .fas:hover,
+.fa:hover,
 .fab:hover {
-  color: #000;
+  color: rgb(7, 176, 182);
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 700px){
+    .navbar{
+        justify-content: space-between;
+    }
 }
