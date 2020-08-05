@@ -1,15 +1,41 @@
 .side-menu{
-    display: none;
-    background: #aaa;
-    width: 100%;
-    height: calc(100vh - 100px);
+    transform: translateX(-100%);
+    background: #fff;
+    height: 100vh;   
+    transition: ease-in-out 1s;
+}
+.side-menu ul{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 0;
+}
+.side-menu ul li{
+    padding: 10px;
+    padding-left: 40px;
+}
+.side-menu ul li:hover{
+  border-bottom: 1px solid #aaa;
+  background: #eee;
+  text-decoration: none;
+}
+.hamburger-link{
+    color: #333;
+}
+.hamburger-link:hover{
+    text-decoration: none;
 }
 
 .fa-bars{
     border-radius: 35%;
-    border: 1px solid rgb(4, 133, 138);
+    /* border: 1px solid rgb(4, 133, 138); */
     background: none;
     padding: 8px;
     font-size: 1.3rem;
     color: rgb(4, 133, 138);
+}
+
+.fa-bars:hover{
+    /* border: none; */
+    border-radius: 50%;
 }

@@ -10,9 +10,6 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
-.link{
-  
-}
 .link p{
   cursor: pointer;
   font-size: inherit;
@@ -27,18 +24,23 @@ text-decoration: underline;
   align-self: center;
 }
 .thumbnail img {
-  /* width: 100%; */
   max-width: 72px;
   border-radius: 7px;
   object-fit: fill;
 }
-
-@media screen and (max-width: 1000px) {
-  .thumbnail_link {
+.thumbnail_link {
     padding: 0 10px;
-    
   }
+
+@media screen and (max-width: 900px) {
   .thumbnail{
       display: none;
   }
 }
+
+@media screen and (max-width: 700px){
+  .thumbnail{
+      display: block;
+  }
+}
+

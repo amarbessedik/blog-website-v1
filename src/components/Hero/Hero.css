@@ -42,12 +42,20 @@
 .fa-search {
   color: #222;
   cursor: pointer;
-  transform: scale(1.05);
   margin-right: 5px;
 }
 .fa-search:hover {
   color: #333;
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+.hero-image{
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 200px; 
+}
+.hero-image img{
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 700px) {
@@ -58,9 +66,9 @@
     align-self: center;
     margin-bottom: 15px;
   }
-  .search-section {
-    min-width: 100%;
-    align-self: flex-end;
+  .search-section{
+    min-width: 60vw;
+    align-self: center;
   }
   .nav-links {
     display: none;

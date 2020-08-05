@@ -23,7 +23,7 @@ const SocialIcon = ({ icon, title }) => {
     <li>
       <Link  to='/'>
         <i
-          className={icon}
+          className={`${icon} icon`}
           data-toggle="tooltip"
           data-placement="top"
           title={title}

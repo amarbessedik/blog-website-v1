@@ -3,7 +3,7 @@ import './App.css';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
-import NoMatch from './pages/NoMatch/NoMatch';
+import NoMatch from './pages/NoMatch/NoMatch'; 
 import { Route, Switch} from 'react-router-dom';
 import Navbar from './components/Navigation/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';

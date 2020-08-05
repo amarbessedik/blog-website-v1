@@ -1,15 +1,25 @@
-import React, { useState} from "react";
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./BurgerBar.css";
+
+const links = [
+  { name: "Home", url: "/" },
+  { name: "Posts", url: "/posts" },
+  { name: "Contact", url: "/contact" },
+  { name: "About", url: "/about" },
+];
 
 const BurgerBar = () => {
   const [hidden, setHidden] = useState(true);
 
   const handleClick = () => {
-    const sideMenuClass = document.querySelector(".side-menu");
+    const sideMenu = document.querySelector(".side-menu");
+    sideMenu.style.transition = "ease-in-out .5s";
+
     hidden
-      ? (sideMenuClass.style.display = "block")
-      : (sideMenuClass.style.display = "none");
+      ? (sideMenu.style.transform = "translateX(0)")
+      : (sideMenu.style.transform = "translateX(-100%)");
+
     setHidden(!hidden);
   };
   return (
@@ -17,26 +27,15 @@ const BurgerBar = () => {
       <i onClick={handleClick} className="fas fa-bars"></i>
       <div className="side-menu">
         <ul>
-          <li>
-            <Link className="link" to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className="link" to="/posts">
-              Posts
-            </Link>
-          </li>
-          <li>
-            <Link className="link" to="/contact">
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link className="link" to="/about">
-              About
-            </Link>
-          </li>
+          {links.map((link, index) => {
+            return (
+              <li key={index} onClick={handleClick}>
+                <Link className="hamburger-link" to={link.url}>
+                  {link.name}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>

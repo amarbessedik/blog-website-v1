@@ -2,8 +2,9 @@ import React from "react";
 import "./Hero.css";
 import { Link } from "react-router-dom";
 import Card from "../Card/Card";
+import hero_image from '../../assets/images/hero_image.jpg'
 
-const Hero = () => {
+const Hero = () => { 
   return (
     <Card>
       <div className="hero-container">
@@ -32,7 +33,6 @@ const Hero = () => {
           </ul>
         </div>
         <div className="search-section">
-          <i className="fa fa-search" aria-hidden="true"></i>
           <input
             className="input"
             type="text"
@@ -41,7 +41,11 @@ const Hero = () => {
             data-placement="top"
             title="Search Posts"
           />
+          <i className="fa fa-search" aria-hidden="true"></i>
         </div>
+      </div>
+      <div className="hero-image">
+        <img src={hero_image} alt="hero_image" />
       </div>
     </Card>
   );

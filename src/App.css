@@ -1,33 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap");
 
-*{
-    font-family: 'Mulish', sans-serif;
+* {
+  font-family: "Mulish", sans-serif;
 }
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: #eee;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #eee;
+  position: relative;
 }
 
-.outer-content{
-    width: 100vw;
-    min-height: 100vh;
+.outer-content {
+  width: 100vw;
+  min-height: 100vh;
 }
-.inner-container{
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0 10px; */
+}
+.main-content {
+  padding: 0 10px;
+  /* border: 1px solid red; */
+  width: 70%;
+  height: auto;
+}
+.sidebar-content {
+  padding: 0 10px;
+  /* border: 1px solid blue; */
+  width: 29%;
+  min-height: 100vh;
+}
+
+.hamburger-menu {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 0px;
+}
+
+@media screen and (min-width: 700px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .inner-container {
     display: flex;
-    justify-content: space-between;
-    /* padding: 0 10px; */
-}
-.main-content{
-    padding: 0 10px;
-    /* border: 1px solid red; */
-    width: 70%;
-    min-height: 100vh;
-}
-.sidebar-content{
-    padding: 0 10px;
-    /* border: 1px solid blue; */
-    width: 29%;
-    min-height: 100vh;
+    flex-direction: column;
+  }
+  .main-content, .sidebar-content {
+    width: 100%;
+  }
 }
