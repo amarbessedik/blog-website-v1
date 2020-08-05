@@ -16,7 +16,7 @@
 }
 .side-menu ul li:hover{
   border-bottom: 1px solid #aaa;
-  background: #eee;
+  background: rgba(4, 133, 138, 0.2);
   text-decoration: none;
 }
 .hamburger-link{
@@ -26,16 +26,15 @@
     text-decoration: none;
 }
 
-.fa-bars{
+.fa-bars, .fa-times{
+    margin-left: 35px;
     border-radius: 35%;
-    /* border: 1px solid rgb(4, 133, 138); */
     background: none;
-    padding: 8px;
+    padding: 6px 8px;
     font-size: 1.3rem;
     color: rgb(4, 133, 138);
 }
 
-.fa-bars:hover{
-    /* border: none; */
+.fa-bars:hover, .fa-times:hover{
     border-radius: 50%;
 }

@@ -24,7 +24,11 @@ const BurgerBar = () => {
   };
   return (
     <div className="hamburger-menu">
-      <i onClick={handleClick} className="fas fa-bars"></i>
+      {hidden ? (
+        <i onClick={handleClick} className="fas fa-bars"></i>
+      ) : (
+        <i onClick={handleClick} className="fas fa-times"></i>
+      )}
       <div className="side-menu">
         <ul>
           {links.map((link, index) => {
