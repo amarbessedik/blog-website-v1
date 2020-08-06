@@ -25,7 +25,7 @@ function App() {
           </Switch>
         </div>
         <div className="sidebar-content">
-          <Sidebar />
+          <Sidebar /> 
         </div>
       </div>
       <Footer />

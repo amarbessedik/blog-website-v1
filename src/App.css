@@ -11,6 +11,10 @@ body {
   position: relative;
 }
 
+.inner-container{
+     padding-top: 100px;
+}
+
 .outer-content {
   width: 100vw;
   min-height: 100vh;

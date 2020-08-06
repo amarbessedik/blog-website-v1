@@ -7,19 +7,15 @@
 }
 .thumbnail_link {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  padding: 0 10px;
 }
-.link p{
-  cursor: pointer;
-  font-size: inherit;
+.link_container{
+  padding: 10px;
+  align-self: center;
 }
-.link p:hover{
-text-decoration: underline;
-}
+
 .thumbnail {
   margin-right: 10px;
-  margin-top: -8px;
   width: 72px;
   align-self: center;
 }
@@ -28,10 +24,6 @@ text-decoration: underline;
   border-radius: 7px;
   object-fit: fill;
 }
-.thumbnail_link {
-    padding: 0 10px;
-  }
-
 @media screen and (max-width: 900px) {
   .thumbnail{
       display: none;
