@@ -1,3 +1,10 @@
+.sidebar{
+  min-height: 100vh;
+  /* top: 100px; */
+  /* overflow-y: scroll; */
+  /* position: fixed; */
+}
+
 .date_published,
 .author {
   display: block;
@@ -5,7 +12,7 @@
   font-weight: 300;
   font-size: 85%;
 }
-.thumbnail_link {
+.thumbnail_link { 
   display: flex;
   padding: 0 10px;
 }

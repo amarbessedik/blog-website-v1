@@ -8,23 +8,23 @@ import hero_image from "../../assets/images/hero_image.jpg";
 const Hero = () => {
   //User search state
   const [search, setSearch] = useState("");
-  //Filtered data
-  const [searchResults, setSearchResults] = useState([]);
-  //Handle user search request
-  const handleChange = (e) => {
-    e.preventDefault();
-    setSearch(e.target.value);
-  };
+  // //Filtered data
+  // const [searchResults, setSearchResults] = useState([]);
+  // //Handle user search request
+  // const handleChange = (e) => {
+  //   e.preventDefault();
+  //   setSearch(e.target.value);
+  // };
 
-  const handleClick = () => {
-    const filtered_data = data.filter(
-      (item) =>
-        item.title.toLowerCase().includes(search.toLowerCase()) && search
-    );
-    if (filtered_data.length) {
-      setSearchResults(filtered_data);
-    }
-  };
+  // const handleClick = () => {
+  //   const filtered_data = data.filter(
+  //     (item) =>
+  //       item.title.toLowerCase().includes(search.toLowerCase()) && search
+  //   );
+  //   if (filtered_data.length) {
+  //     setSearchResults(filtered_data);
+  //   }
+  // };
 
   const landing_image_style = {
     backgroundImage: `linear-gradient(to right, rgba(105, 145, 19, 0.1), rgba(20, 21, 23, 0.5)),
@@ -37,53 +37,16 @@ const Hero = () => {
   return (
     <Card>
       <div className="hero-container">
-        <div className="sub-navbar">
-          <div className="nav-links">
-            <ul>
-              <li>
-                <Link className="link" to="/">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to="/posts">
-                  Posts
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to="/contact">
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to="/about">
-                  About
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="search-section">
-            <input
-              onChange={handleChange}
-              className="input"
-              type="text"
-              placeholder="Search ..."
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Search Posts"
-            />
-            <i
-              onClick={handleClick}
-              className="fa fa-search"
-              aria-hidden="true"
-            ></i>
-          </div>
-        </div>
-      </div>
+     </div>
       <div className="hero-image" style={landing_image_style}>
         {/* <img src={hero_image} alt="hero_image" /> */}
+        <h1>Hello world</h1>
+        <p>Nice dat today</p>
       </div>
-      <div className="search-results-container">
+      <div>
+
+      </div>
+      {/* <div className="search-results-container">
         {searchResults.length ? <h4>Your Search Results: </h4> : null}
         {searchResults &&
           searchResults.map((item) => {
@@ -94,6 +57,10 @@ const Hero = () => {
               </>
             );
           })}
+      </div> */}
+      <div className="home-page-content">
+        <h1>Title</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio odit rem obcaecati corporis quae! Obcaecati nulla pariatur temporibus ullam, dolor esse qui accusamus quibusdam ex consequuntur, officiis quo ipsa ad, minus deleniti! Quidem eveniet odio quas? Nobis hic quo consequuntur fugiat ratione! Dolores, numquam nesciunt eaque itaque neque obcaecati quis!</p>
       </div>
     </Card>
   );
